@@ -1,0 +1,15 @@
+{% autoescape off %}
+
+Hi {{user.first_name}},
+
+{% if is_approved %}
+Congratulations!, Your account has been approved by our admin team.
+{% else %}
+We are sorry, you are not eligible for publishing your food menu on our marketplace.
+{% endif %}
+
+
+
+
+
+{% endautoescape %}
